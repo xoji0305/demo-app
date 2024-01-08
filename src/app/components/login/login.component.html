@@ -1,0 +1,12 @@
+<div class="modal">
+  <div class="modal-content">
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <alert></alert>
+      <div class="d-flex w-100 flex-column">
+        <label class="mb-2 font-weight-500 fs-15" for="password">Password</label>
+        <input class="reset-input" id="password" type="password" formControlName="password">
+      </div>
+      <button class="d-flex ml-auto mt-3 cursor-pointer btn primary-btn p-2 c-white" type="submit">Login</button>
+    </form>
+  </div>
+</div>
